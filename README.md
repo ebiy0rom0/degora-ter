@@ -14,30 +14,31 @@ Simple and basic usage:
 ```
 degorater.Print("message you want to decorate", nil)
 ```
-For result:
+Result is:
 ```
 +------------------------------+
 | message you want to decorate |
 +------------------------------+
 ```
 
-Too long messages will be automatically wrapped.
+Too long messages will be automatically wrapped.  
+Note: The word breaks when wrapped.[#]()
 ```
-degorater.Print("This is too long message. Want a automatically wrapped", nil)
+degorater.Print("This is too long message. Want a automatically wrapped.", nil)
 ```
-For result:
+Result is:
 ```
 +------------------------------+
 | This is too long message. Wan|
-| t a automatically wrapped    |
+| t a automatically wrapped.   |
 +------------------------------+
 ```
 
-choices can output.
+It can be lined up choices.
 ```
 degorater.Print("Which one will you choose?", []string{"choice1", "choice2"})
 ```
-For result:
+Result is:
 ```
 +------------------------------+
 | Which one will you choose?   |
@@ -47,11 +48,29 @@ For result:
 +------------------------------+
 ```
 
-## Options
+And if there are more than four choices, they may be lined up side by side.  
+This depends on the string length of each column.
+```
+degorater.Print("Which one will you choose?", []string{"choice1", "choice2", "choice3", "choice4"})
+```
+Result is:
+```
++------------------------------+
+| Which one will you choose?   |
+|                              |
+| 1. choice1     2. choice2    |
+| 3. choice3     4. choice4    |
++------------------------------+
+```
+
+## Features
 | Name | Type | Default | Description |
 |------|------|---------|-------------|
-| width | `int` | `terminal width` \| `30` | |
-| sp | `string` | `_` |  |
-| corner | `string` | `+` |  |
-| top | `string` | `-` |  |
-| side | `string` | `|` |  |
+| width | `int` | `terminal width` \| `30` | wip |
+| sp | `string` | `_` | wip |
+| corner | `string` | `+` | wip |
+| side | `string` | `\|` | wip |
+| top | `string` | `-` | wip |
+
+## License
+MIT License
