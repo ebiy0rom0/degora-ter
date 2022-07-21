@@ -1,4 +1,4 @@
-module degorater
+module github.com/ebiy0rom0/degorater
 
 go 1.17
 
