@@ -1,4 +1,4 @@
-module go-terminal
+module degorater
 
 go 1.17
 
