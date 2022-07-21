@@ -1,4 +1,4 @@
-package dego
+package degorater
 
 func (d *degorater) makeJustifyFullSpacing(str string) string {
 	return d.makeJustifySpacing(str, d.width)

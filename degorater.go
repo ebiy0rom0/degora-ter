@@ -1,4 +1,4 @@
-package dego
+package degorater
 
 import (
 	"syscall"
